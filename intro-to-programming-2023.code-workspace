@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "intro-to-programming-2023",
+			"path": "."
+		},
+		{
+			"name": "js:",
+			"path": "../js:"
+		}
+	],
+	"settings": {}
+}
