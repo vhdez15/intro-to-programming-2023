@@ -1,0 +1,85 @@
+body {
+  background-color:rgb(195, 220, 240);
+  color: rgb(12, 40, 97);
+  font-family:'Times New Roman', Times, serif;
+}
+
+section{
+  padding: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight:bold;
+    color:rgb(111, 164, 240);
+
+}
+
+h2,h3,h4,h5,h6,h7 {
+    font size: 22px;
+    font-weight:bold;
+    color:black;
+}
+
+section li{
+    background-color:rgb(205, 241, 236, 0.958);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+form[name="leave_message"] {
+    display:flex;
+    flex-direction:column;
+}
+
+form[name="leave_message"] div{
+    margin-bottom:10px;
+}
+
+form[name="leave_message"]label{
+    font-size: 16px;
+    color:rgb(7, 63, 168)
+}
+form[name="leave_message"]input,
+form[name="leave_message"]textarea{
+    font-size: 26px;
+    padding:12px;
+    background-color: rgb(10, 234, 215);
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+form[name= "leave_message"] button{
+    padding:5px;
+    background-color: #2fc955;
+    color:rgb(26, 29, 27);
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+messages li {
+    background-color:rgb(215, 193, 236);
+    padding:5px;
+    margin-bottom: 5px;
+    border-radius:4px;
+
+}
+
+#messages button{
+    padding:2px;
+    font-size:10px;
+    background-color:#26cb86;
+    color:black;
+    border:none;
+    border-radius:2px;
+    cursor:pointer;
+
+}
+
+footer{
+    padding:none;
+    background-color:rgb(142, 182, 238);
+    color:rgb(49, 17, 194);
+}
+
