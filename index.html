@@ -10,9 +10,21 @@
 
 <body>
 
-    <h1> Vale Hdez </h1>
+    <header>
+        <h1> Vale Hdez </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#connect">Connect</a></li>
+                <li><a href="#leave_message">Leave a Message</a></li>
+                <li><a href="#messages">Messages</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <section>
+    <section id="about">
         <h2> About </h2> 
         <p>
             I enjoy spending time outdoors. Camping and going on hikes with friends and family. I like to create art and work with my hands. Whether it be painting, collaging or doing a arts and crafts project. 
@@ -21,15 +33,15 @@
     </section>
 
 
-    <section>
+    <section id="experience">
         <h2> Experience </h2> 
         <p> 
-        <ul>
-            <li>Client Representative</li>
-            <li>Food pantry staff</li>
-            <li>Navigator</li>
-            <li>Teacher</li>
-        </ul>    
+        <div class="experience-grid">
+            <div class="experience-item">Client Representative</div>
+            <div class="experience-item">Food pantry staff</div>
+            <div class="experience-item">Navigator</div>
+            <div class="experience-item">Teacher</div>
+        </div>    
         </p>
     </section>
 
@@ -41,13 +53,13 @@
     </section>
 
 
-    <section>
+    <section id="connect">
         <h2> Connect </h2>
         <p> https://github.com/vhdez15 </p>
     </section>
 
 
-    <section>
+    <section id="leave_message">
        <h2> Leave a Message</h2>
        <form name="leave_message">
 

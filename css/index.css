@@ -1,23 +1,44 @@
 body {
-  background-color:rgb(195, 220, 240);
+  background-color: rgb(195, 220, 240);
   color: rgb(12, 40, 97);
   font-family:'Times New Roman', Times, serif;
+  margin:0;
+  padding:0;
 }
 
+header{
+ background-color: whitesmoke;
+ color:white;
+ padding:10px;
+ position:sticky;
+ top:0;
+ z-index:1000;   
+}
+
+nav ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+nav ul li{
+    margin-right:15px;
+}
 section{
   padding: 10px;
 }
 
 h1 {
-    font-size: 30px;
-    font-weight:bold;
-    color:rgb(111, 164, 240);
+  font-size: 30px;
+  font-weight: bold;
+  color:rgb(111, 164, 240);
 
 }
 
 h2,h3,h4,h5,h6,h7 {
-    font size: 22px;
-    font-weight:bold;
+    font-size: 22px;
+    font-weight: bold;
     color:black;
 }
 
@@ -28,9 +49,30 @@ section li{
     border-radius: 5px;
 }
 
+#experience {
+    padding:10px;
+}
+
+.experience-grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.experience-item{
+    flex: 1 1 calc(30 % - 20px);
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}
 form[name="leave_message"] {
     display:flex;
     flex-direction:column;
+    align-items: center;
+    max-width:400px;
+    margin:0 auto;
 }
 
 form[name="leave_message"] div{
@@ -43,14 +85,17 @@ form[name="leave_message"]label{
 }
 form[name="leave_message"]input,
 form[name="leave_message"]textarea{
+    width:100%
     font-size: 26px;
     padding:12px;
+    margin-bottom: 10px;
     background-color: rgb(10, 234, 215);
     border: 1px solid black;
     border-radius: 8px;
     cursor: pointer;
 }
 form[name= "leave_message"] button{
+    width: 100%
     padding:5px;
     background-color: #2fc955;
     color:rgb(26, 29, 27);
@@ -82,4 +127,34 @@ footer{
     background-color:rgb(142, 182, 238);
     color:rgb(49, 17, 194);
 }
+@media only screen and (max-width:600px){
+    header{
+        font-size:20 px;
+    }
+}
+section li,
+.experience-item {
+    flex:1 1 calc(100%- 20px);
+}
 
+form[name="leave_message"]{
+    max-width: 300px;
+}
+
+}
+
+@media only screen and (min-width:601px) and (max-width:1024px){
+    h1{
+        font-size:24px;
+    }
+}
+
+section li,
+.experience-item{
+    flex:1 1 calc(48%-20px);
+}
+
+form[name="leave-message"] {
+    max-width:400px;
+}
+}
